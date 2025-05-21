@@ -7,6 +7,9 @@
   </head>
   <body>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       .list {
         display: flex;
         align-items: center;
@@ -17,28 +20,57 @@
         border-bottom: 1px solid #888;
         align-self: start;
       }
-      .element {
+      .item {
         border: 1px solid #eee;
         border-radius: 4px;
         padding: 3px 10px;
         margin: 5px 5px 0 0;
       }
-      .tags {
+      .itemTags {
         font-size: 12px;
         color: #888;
         margin: 0 10px;
       }
+      .itemName {
+        flex: 0 0 250px;
+        width: 250px;
+        border-right: 1px solid #888;
+        padding-right: 5px;
+      }
+      .itemHead {
+        display: flex;
+        border-bottom: 1px solid #eee;
+      }
+      .idemDes {
+        padding: 20px 0;
+      }
     </style>
     <div class="list">
       <div class="value">Критично</div>
-      <div>
-        <div class="list">
-          <div class="tags">#Техническая оптимизация</div>
-          <div class="element">Зеркала с www и без www</div>
+      <div class="items">
+        <div class="item">
+          <div class="itemHead">
+            <div class="itemName">Зеркала с www и без www</div>
+            <div class="itemTags">
+              #Техническая оптимизация #Дублирование страниц #Индексация #Анализ сайта #Сквозная оптимизация #Внутренняя
+              оптимизация #Анализ конкурентов
+            </div>
+          </div>
+          <div class="idemDes">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati maxime odit asperiores laborum
+            consequatur illum nulla eum, unde sint cumque? Placeat repudiandae repellat voluptates nihil dolores
+            pariatur assumenda! Repellat, aut?
+          </div>
         </div>
-        <div class="list">
-          <div class="tags">#Техническая оптимизация</div>
-          <div class="element">http / https</div>
+
+        <div>
+          <div class="item">
+            <div class="itemName">http / https</div>
+            <div class="itemTags">
+              #Техническая оптимизация #Дублирование страниц #Индексация #Анализ сайта #Сквозная оптимизация #Внутренняя
+              оптимизация #Анализ конкурентов
+            </div>
+          </div>
         </div>
       </div>
     </div>
